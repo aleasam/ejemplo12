@@ -1,0 +1,46 @@
+<% arr = ['h','e','l','l','o',' ','w','o','r','l','d'] %>
+
+
+<li><%= "Escriba su nombre" %></li>
+<li><%= name=gets() %></li>
+<li><%= "hola #{name} " %></li>
+
+
+
+<%
+reverse_sorted_arr = arr.sort{
+ |a,b|
+  b.to_s <=> a.to_s
+ } %> 
+
+<% i = 1 %>
+<ul>
+<% reverse_sorted_arr.each{ |item| %>
+<li><%= "Item [#{i}] = #{item}" %></li>
+<% i += 1 %>
+<% } %>
+</ul> 
+
+<a href="javascript:void(0)" onclick="editor()">Editor</a> </
+
+
+  <div>
+   <center>  <h1>Diccionario de Terminos</h1> </center> 
+  </div>
+   
+<div>
+   <center> <h2><input name="input" type="text" class="borde-redondeado" dir="ltr" lang="es" size="30" />
+     <input name="btnBuscar" type="submit" class="botton_d" id="btnBuscar" value="Buscar" />
+   </h2></center> 
+ </div> 
+
+  
+     
+     
+<div id="casa">
+	<h1>Welcome </h1>
+
+
+</div>
+
+
